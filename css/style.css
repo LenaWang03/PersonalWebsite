@@ -1,18 +1,55 @@
+/* text styles */
 body {
-  background-color: #000;
   color: white;
-  font-size: 10px;
-  font-family: fantasy;
-}
-img {
-  border-radius: 10px;
-  float: left;
-  margin-right: 10px;
+  font-size: 20px;
+  font-family: courier;
+  font-weight: bold;
+  background-image: url("../images/Landing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #847cd4;
 }
 
-.username {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #847cd4;
+}
+.code {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+boldCode {
+  color: white;
+  font-size: 150px;
+}
+
+reg {
+  color: white;
   font-weight: bold;
 }
-h2 {
-  color: green;
+
+.landingPage {
+  height: 1000px;
+  background-size: cover;
+}
+
+.menu {
+  text-align: right;
+  margin: 40px;
+}
+.boxLanding {
+  margin: 30px;
+  margin-top: 250px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
+  width: 700px;
+}
+
+img {
+  max-width: 5%;
+  height: auto;
 }
