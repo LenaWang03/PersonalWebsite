@@ -1,13 +1,13 @@
 /* text styles */
 body {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-family: courier;
   font-weight: bold;
-  background-image: url("images/Landing.png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #847cd4;
+  background-color: #232323;
+  background-image: url("images/Landing.png");
+  background-size: contain;
 }
 
 a {
@@ -18,38 +18,92 @@ a {
 a:hover {
   color: #847cd4;
 }
-.code {
-  color: rgba(255, 255, 255, 0.5);
-}
 
 boldCode {
   color: white;
   font-size: 150px;
 }
 
+h1 {
+  color: #847cd4;
+  font-weight: bold;
+  font-size: 80px;
+}
+h2 {
+  color: #847cd4;
+  font-weight: bold;
+  font-size: 30px;
+}
+h3 {
+  font-family: courier;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
+  font-size: 16px;
+}
 reg {
   color: white;
-  font-weight: bold;
 }
-
 .landingPage {
-  height: 1000px;
-  background-size: cover;
-}
+  margin: 0px;
 
+  height: 800px;
+}
 .menu {
   text-align: right;
-  margin: 40px;
+  margin: 20px;
+}
+.name {
+  float: left;
+  margin-left: 30px;
 }
 .boxLanding {
   margin: 30px;
   margin-top: 250px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: lighter;
-  width: 700px;
+  width: 50%;
+  min-width: 450px;
 }
 
 img {
-  max-width: 5%;
-  height: auto;
+  max-width: 6%;
+  float: left;
+  margin: -10px;
+}
+
+#about {
+  margin: 100px;
+  color: rgba(130, 124, 206, 0.7);
+  font-weight: lighter;
+}
+.type {
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  margin: 20px;
+  border-right: dashed;
+  height: 270px;
+}
+
+footer {
+  margin-top: 30px;
+  clear: both;
+  margin: 30px;
+  background-color: #847cd4;
+  text-align: center;
+}
+
+.button {
+  background-color: #232323;
+  border-radius: 8px;
+  text-align: center;
+  padding: 7px;
+  width: 150px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.tab {
+  margin-left: 30px;
 }
