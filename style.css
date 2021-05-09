@@ -6,6 +6,7 @@ body {
   font-weight: bold;
   background-repeat: no-repeat;
   background-color: #232323;
+  background-image: url("images/Landing.png");
   background-size: cover;
 }
 
