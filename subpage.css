@@ -6,8 +6,6 @@ body {
   font-weight: bold;
   background-repeat: no-repeat;
   background-color: #232323;
-  background-image: url("images/Landing.png");
-  background-size: contain;
   margin: 0;
 }
 
@@ -36,16 +34,30 @@ h2 {
   font-size: 30px;
 }
 h3 {
-  font-family: courier;
   color: rgba(255, 255, 255, 0.5);
-  font-weight: lighter;
+  font-size: 16px;
+}
+h4 {
+  color: rgba(35, 35, 35, 0.5);
+  font-size: 16px;
+}
+h5 {
+  color: rgba(130, 124, 206, 0.7);
   font-size: 16px;
 }
 reg {
   color: white;
 }
 
-img {
+dark {
+  color: #232323;
+}
+
+coloured {
+  color: #847cd4;
+}
+
+.logo img {
   width: 70px;
 }
 .logo {
@@ -75,51 +87,63 @@ header {
   position: fixed;
   font-size: larger;
   width: 100%;
-  margin-top: -30px;
   background-color: rgba(35, 35, 35, 0.7);
 }
 
-.boxLanding {
-  margin: 30px;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: lighter;
-  width: 50%;
-  padding-top: 250px;
-  min-width: 450px;
-}
-
-#about {
-  padding-top: 100px;
-  margin: 100px;
-  color: rgba(130, 124, 206, 0.7);
-  font-weight: lighter;
-}
-.type {
-  float: left;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  margin: 20px;
-  border-right: dashed;
-  height: 270px;
-}
-
-footer {
-  clear: both;
-  margin-top: 750px;
-  background-color: #847cd4;
-  padding: 20px;
-  text-align: center;
-}
-
-.button {
-  background-color: #232323;
-  border-radius: 8px;
-  text-align: center;
-  padding: 7px;
-  width: 150px;
-  margin-top: 30px;
+.top {
+  background-color: white;
+  height: 350px;
+  padding-left: 100px;
+  padding-top: 200px;
   font-weight: bold;
+}
+
+.content {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.panel {
+  width: 670px;
+  height: 400px;
+  margin: 40px;
+  background-color: #847cd4;
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.text h2 {
+  text-align: center;
+  color: white;
+}
+.text h5 {
+  margin-left: 30px;
+  color: #847cd4;
+}
+.panel .text {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding-top: 40px;
+  margin-top: -10px;
+  transition: opacity 0.5s ease;
+  background-color: rgba(35, 35, 35, 0.7);
+}
+.panel:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bar {
+  clear: both;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 606px;
+}
+.bar p {
+  float: left;
+  margin-right: 50px;
 }
 
 .tab {
