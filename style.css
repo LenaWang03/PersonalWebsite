@@ -6,9 +6,14 @@ body {
   font-weight: bold;
   background-repeat: no-repeat;
   background-color: #232323;
-  background-image: url("images/Landing.png");
-  background-size: contain;
   margin: 0;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 a {
@@ -17,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #847cd4;
+  color: #868ff6;
 }
 
 boldCode {
@@ -26,26 +31,40 @@ boldCode {
 }
 
 h1 {
-  color: #847cd4;
+  color: #868ff6;
   font-weight: bold;
   font-size: 80px;
 }
 h2 {
-  color: #847cd4;
+  color: #868ff6;
   font-weight: bold;
   font-size: 30px;
 }
 h3 {
-  font-family: courier;
   color: rgba(255, 255, 255, 0.5);
-  font-weight: lighter;
+  font-size: 16px;
+}
+h4 {
+  color: rgba(35, 35, 35, 0.5);
+  font-size: 16px;
+}
+h5 {
+  color: rgba(134, 143, 246, 0.7);
   font-size: 16px;
 }
 reg {
   color: white;
 }
 
-img {
+dark {
+  color: #232323;
+}
+
+coloured {
+  color: #868ff6;
+}
+
+.logo img {
   width: 70px;
 }
 .logo {
@@ -75,8 +94,18 @@ header {
   position: fixed;
   font-size: larger;
   width: 100%;
-  margin-top: -30px;
   background-color: rgba(35, 35, 35, 0.7);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.landingPage {
+  display: grid;
+  background-color: #868ff6;
+  background-image: url(images/Landing.png);
+  background-position: 70%;
+  background-size: cover;
+  height: 750px;
 }
 
 .boxLanding {
@@ -86,30 +115,51 @@ header {
   width: 50%;
   padding-top: 250px;
   min-width: 450px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.boxLanding h3 {
+  min-width: 700px;
 }
 
 #about {
-  padding-top: 100px;
-  margin: 100px;
-  color: rgba(130, 124, 206, 0.7);
+  margin: 0 100px;
+  color: rgba(134, 143, 246, 0.7);
   font-weight: lighter;
+  display: inline-block;
 }
 .type {
   float: left;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
+  width: 43%;
+  min-width: 300px;
   margin: 20px;
-  border-right: dashed;
-  height: 270px;
+  padding-left: 30px;
+  height: 350px;
+  border-style: dashed;
 }
 
 footer {
   clear: both;
-  margin-top: 750px;
-  background-color: #847cd4;
+  margin-top: 30px;
   padding: 20px;
+  padding-top: 200px;
+  list-style-type: none;
   text-align: center;
+  background-image: url("images/Foot.png");
+  background-position: bottom;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+footer a {
+  color: rgba(35, 35, 35);
+}
+
+footer a:hover {
+  color: white;
 }
 
 .button {
@@ -124,4 +174,114 @@ footer {
 
 .tab {
   margin-left: 30px;
+}
+
+.top {
+  /*background-image: url("images/Top.png");*/
+  background-position: bottom;
+  background-color: white;
+  height: 350px;
+  padding-left: 100px;
+  padding-top: 200px;
+  font-weight: bold;
+}
+
+.bar {
+  clear: both;
+  padding-top: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bar li {
+  display: inline-block;
+
+  margin-right: 50px;
+}
+
+.bar a {
+  color: #868ff6;
+}
+
+.bar a:hover {
+  color: #232323;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: center;
+}
+
+.panel {
+  align-items: center;
+  display: grid;
+}
+
+.text h2 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.text h5 {
+  margin-left: 30px;
+  color: #868ff6;
+}
+.column img {
+  margin-top: 20px;
+  width: 100%;
+}
+.panel .image {
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+.panel .text {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+}
+
+.panel:hover .text {
+  opacity: 1;
+}
+.panel .overlay {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+}
+.panel:hover .overlay {
+  transition: opacity 0.5s ease;
+  background-color: rgba(35, 35, 35, 0.7);
+}
+
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1220px) {
+  .column {
+    flex: 46%;
+    max-width: 46%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1000px) {
+  .type {
+    width: 100%;
+    max-width: 500px;
+  }
 }

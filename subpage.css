@@ -99,40 +99,75 @@ header {
 }
 
 .content {
-  width: 1920px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: center;
 }
 
 .panel {
-  width: 670px;
-  height: 400px;
-  margin: 40px;
-  background-color: #847cd4;
-  float: left;
-  background-size: cover;
-  background-position: center;
+  align-items: center;
+  display: grid;
 }
 
 .text h2 {
   text-align: center;
+  padding: 10px;
   color: white;
 }
 .text h5 {
   margin-left: 30px;
   color: #847cd4;
 }
+.column img {
+  margin-top: 20px;
+  width: 100%;
+}
+.panel .image {
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
 .panel .text {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+}
+
+.panel:hover .text {
+  opacity: 1;
+}
+.panel .overlay {
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  padding-top: 40px;
-  margin-top: -10px;
+}
+.panel:hover .overlay {
   transition: opacity 0.5s ease;
   background-color: rgba(35, 35, 35, 0.7);
 }
-.panel:hover .text {
-  visibility: visible;
-  opacity: 1;
+
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1220px) {
+  .column {
+    flex: 46%;
+    max-width: 46%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .bar {
@@ -148,4 +183,26 @@ header {
 
 .tab {
   margin-left: 30px;
+}
+
+footer {
+  clear: both;
+  margin-top: 750px;
+  background-color: #847cd4;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+footer a {
+  color: rgba(35, 35, 35);
+}
+
+footer a:hover {
+  color: white;
 }
