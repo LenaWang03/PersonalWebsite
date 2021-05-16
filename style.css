@@ -113,7 +113,7 @@ header {
   color: rgba(255, 255, 255, 0.5);
   font-weight: lighter;
   width: 50%;
-  padding-top: 250px;
+  padding-top: 300px;
   min-width: 450px;
   grid-column: 1;
   grid-row: 1;
@@ -124,17 +124,17 @@ header {
 }
 
 #about {
-  margin: 0 100px;
+  margin: 0 80px;
   color: rgba(134, 143, 246, 0.7);
   font-weight: lighter;
   display: inline-block;
 }
 .type {
   float: left;
-  width: 43%;
+  width: 37%;
   min-width: 300px;
   margin: 20px;
-  padding-left: 30px;
+  padding: 0 30px;
   height: 350px;
   border-style: dashed;
 }
@@ -281,7 +281,7 @@ footer a:hover {
 /* Responsive layout */
 @media screen and (max-width: 1000px) {
   .type {
-    width: 100%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 90%;
   }
 }
