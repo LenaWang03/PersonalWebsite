@@ -113,7 +113,7 @@ header {
   color: rgba(255, 255, 255, 0.5);
   font-weight: lighter;
   width: 50%;
-  padding-top: 300px;
+  padding-top: 330px;
   min-width: 450px;
   grid-column: 1;
   grid-row: 1;
@@ -235,6 +235,7 @@ footer a:hover {
   text-align: center;
   grid-column: 1;
   grid-row: 1;
+  border-radius: 20px;
 }
 .panel .text {
   grid-column: 1;
@@ -282,6 +283,6 @@ footer a:hover {
 @media screen and (max-width: 1000px) {
   .type {
     width: 90%;
-    max-width: 90%;
+    min-width: 100px;
   }
 }
