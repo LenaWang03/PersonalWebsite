@@ -574,19 +574,7 @@ footer a:hover {
   }
 
   boldCode {
-    font-size: 70px;
-  }
-
-  .intro {
-    width: 300px;
-    padding-top: 80px;
-  }
-
-  .intro img {
-    width: 150px;
-    margin-top: -150px;
-    margin-left: 80px;
-    position: absolute;
+    font-size: 60px;
   }
 
   .landingPage {
@@ -598,6 +586,7 @@ footer a:hover {
   .boxLanding .hello {
     width: 400px;
     margin-left: -10%;
+    padding-top: 100px;
   }
 
   .boxLanding .button {
@@ -610,15 +599,30 @@ footer a:hover {
     position: absolute;
     justify-content: center;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 650px;
+    margin-top: 700px;
     margin-left: -10%;
     width: 400px;
   }
 
   #about {
-    padding-top: 500px;
+    padding-top: 550px;
     color: rgba(134, 143, 246, 0.7);
     font-weight: lighter;
+  }
+
+  .intro {
+    width: 250px;
+    padding-top: 80px;
+  }
+  #about h3 {
+    font-size: 16px;
+  }
+
+  .intro img {
+    width: 150px;
+    margin-top: -150px;
+    margin-left: 60px;
+    position: absolute;
   }
 
   .header nav a {
