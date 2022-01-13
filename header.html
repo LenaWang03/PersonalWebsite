@@ -9,15 +9,29 @@
     <link rel="stylesheet" href="all.css" />
   </head>
 
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/Logo.png" alt="logo" /></a>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myHeader");
+      if (x.className === "header") {
+        x.className += " responsive";
+      } else {
+        x.className = "header";
+      }
+    }
+  </script>
+  <div class = "header" id="myHeader">
+    <div class="nonLink">
+      <div class = "left"><a href="index.html"><img class = "logo" src="images/Logo.png" alt="logo" /></a>
+        Lena Wang</div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <div class="name">Lena Wang</div>
-    <div class="links">
-      <div class="link"><a href="index.html#about">getAbout()</a></div>
-      <div class="link"><a href="portfolio.html">getPortfolio()</a></div>
-      <div class="link"><a href="work.html">getWork()</a></div>
-    </div>
+    <nav>
+      <a href="index.html#about">getAbout()</a>
+      <a href="portfolio.html">getPortfolio()</a>
+      <a href="work.html">getWork()</a>
+    </nav>
+    
   </header>
 </html>
