@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/LogoSolid.png" />
+    <link rel="stylesheet" href="all.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <title>Andy</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="top">
+      <h1><reg>Andy</reg></h1>
+    </div>
+
+    <div class="content">
+      <div class="work">
+        <div class="column">
+          <div class="text">
+            <div class="column">
+              <h2>Type</h2>
+              <h3>Digital Painting</h3>
+            </div>
+            <div class="column">
+              <h2>Date</h2>
+              <h3>February 2021</h3>
+            </div>
+            <div class="column">
+              <h2>Size</h2>
+              <h3>2388px x 1668px"</h3>
+            </div>
+          </div>
+          <h5>// Portrait of my friend Andy</h5>
+          </h5>
+          <img src="images/Andy.JPG" alt="Andy" />
+          <div class="process"><h2>Process Work</h2></div>
+          <video controls="controls" width="800" height="600" name="Video Name">
+            <source src="images/AndyProc.mov" alt="Andy" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

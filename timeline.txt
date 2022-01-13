@@ -1,0 +1,59 @@
+Code for timeline 
+
+<div class = "education"> 
+        <div class = "column L">
+          <div class = "section">
+            <div class = "title"><h7>Milestone</h7></div>
+            <div class = "point"><img src="images/pointL.png" alt="point"></div>
+            <div class = "mainText"> <h6>At the age of 4 my parents put me in this It is a long established fact that 
+              a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+              content here', making it look like reaa search for 'lorem ipsum' w</h6></div>
+          </div>
+          <div class = "section">
+            <div class = "title"><h7>First Art Class</h7></div>
+            <div class = "point"><img src="images/pointL.png" alt="point"></div>
+            <div class = "mainText"> <h6>At the age of 4 my parents put me in this It is a long established fact that 
+              a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+              content here', making it look like reaa search for 'lorem ipsum' w</h6></div>
+          </div>
+        </div>
+        <div class = "divider">
+          <h2>Education <br> + <br> Experience</h2>
+          <h4>20 <br> 08</h4>
+          <div class = "right"><h6><dark>September</dark></h6></div>    
+          <h1>20 <br> 10 <br> <br> | </h1>
+          <h1>20 <br> 17</h1>
+          <h6><dark>June</dark></h6>
+          <h4>20 <br> 16</h4>
+          <h1>20 <br> 21</h1>
+          <h4>20 <br> 26</h4>
+        </div>
+        <div class = "column R">
+          <div class = "section">
+            <div class = "title"><h7>Milestone</h7></div>
+            <div class = "point"><img src="images/point.png" alt="point"></div>
+            <div class = "mainText"> <h6>At the age of 4 my parents put me in this It is a long established fact that 
+              a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+              content here', making it look like reaa search for 'lorem ipsum' </h6></div>
+          </div>
+          <div class = "section">
+            <div class = "title"><h7>Milestone</h7></div>
+            <div class = "point"><img src="images/point.png" alt="point"></div>
+            <div class = "mainText"> <h6>At the age of 4 my parents put me in this It is a long established fact that 
+              a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+              content here', making it look like reaa search for 'lorem ipsum' </h6></div>
+          </div>
+          <div class = "section">
+            <div class = "title"><h7>Milestone</h7></div>
+            <div class = "point"><img src="images/point.png" alt="point"></div>
+            <div class = "mainText"> <h6>At the age of 4 my parents put me in this It is a long established fact that 
+              a reader will be distracted by the readable content of a page when looking at its layout. The point of using 
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+              content here', making it look like reaa search for 'lorem ipsum' </h6></div>
+          </div>
+        </div>
+      </div>

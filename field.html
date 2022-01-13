@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/LogoSolid.png" />
+    <link rel="stylesheet" href="all.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <title>Central Experimental Farm</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="top">
+      <h1><reg>Central Experimental Farm</reg></h1>
+    </div>
+
+    <div class="content">
+      <div class="work">
+        <div class="column">
+          <div class="text">
+            <div class="column">
+              <h2>Type</h2>
+              <h3>Gouache</h3>
+            </div>
+            <div class="column">
+              <h2>Date</h2>
+              <h3>July 2021</h3>
+            </div>
+            <div class="column">
+              <h2>Size</h2>
+              <h3>4.5" x 7"</h3>
+            </div>
+          </div>
+          <h5>// Painting study done at a field in my neighbourhood</h5>
+          </h5>
+          <img src="images/field.jpg" alt="field" />
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

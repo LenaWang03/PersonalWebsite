@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/LogoSolid.png" />
+    <link rel="stylesheet" href="all.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <script src="handlebars-v4.7.7.js"></script>
+    <script src="handlebars.js"></script>
+    <script>
+      window.onload = fill_templateMisc;
+    </script>
+    <title>Misc.</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="top">
+      <h1 class="tab">work(<reg>misc</reg>)</h1>
+      <p class="tab">
+        <coloured
+          >// Collection of my favourite pieces I've created over the
+          years</coloured
+        >
+      </p>
+      <ul class="bar">
+        <li><a href="work.html">All</a></li>
+        <li><a href="paint.html">Paint</a></li>
+        <li><a href="graphite.html">Dry Media</a></li>
+        <li><a href="digital.html">Digital</a></li>
+        <li><a href="code+design.html">Code/Design</a></li>
+        <li>
+          <a href="misc.html"><dark>Misc.</dark></a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/x-handlebars-template" id="template">
+      {{#each list}}
+        <a href="{{{piece.link}}}.html">
+          <div class="panel">
+            <div class="image"><img
+                src="images/{{{piece.image}}}"
+                alt=""
+              /></div>
+            <div class="text">
+              <h3>{{piece.title}}</h3>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </script>
+    <div class="content">
+      <div class="column">
+        <div id="output"></div>
+      </div>
+      <div class="column">
+        <div id="output2"></div>
+      </div>
+      <div class="column">
+        <div id="output3"></div>
+      </div>
+      <div class="column">
+        <div id="output4"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

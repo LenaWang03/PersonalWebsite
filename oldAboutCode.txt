@@ -1,0 +1,74 @@
+<div class="type">
+        <h2>Skills: [</h2>
+        <p class="tab">
+          <reg>"Adobe Photoshop"</reg> // +5 years <br />
+          <reg>"Adobe Illustrator"</reg> // +4 years<br />
+          <reg>"Adobe Premier/Animate"</reg> // +2 years <br />
+          <reg>"C/Allegro"</reg> // +2 years<br />
+          <reg>"Java"</reg> // +6 months <br />
+          <reg>"HTML/CSS"</reg> // +2 weeks <br />
+          <reg>"Django"</reg> // +4 months <br />
+        </p>
+        <h2>]</h2>
+      </div>
+      <div class="type">
+        <h2>Education: [</h2>
+        <p class="tab">
+          <reg>"IDFK University"</reg> // Bachelor Degree <br />
+          <reg>"Lisgar Collegiate Institute"</reg> // Highschool <br />
+          <reg>"Notre Dame High School"</reg> // Mandarin School <br />
+        </p>
+        <h2>]</h2>
+      </div>
+      <div class="type">
+        <h2>Languages: [</h2>
+        <p class="tab">
+          <reg>"English"</reg> // fluent <br />
+          <reg>"Mandarin"</reg> // fluent <br />
+          <reg>"French"</reg> // basic <br />
+        </p>
+        <h2>]</h2>
+      </div>
+      <div class="type">
+        <h2>Interests: [</h2>
+        <p class="tab">
+          <reg>"Painting/Drawing etc"</reg><br />
+          <reg>"Coding"</reg><br />
+          <reg>"Listening to Music"</reg><br />
+          <reg>"The Office US"</reg><br />
+          <reg>"Petting Cats"</reg> // specifically mine<br />
+          <reg>"Cooking"</reg><br />
+          <reg>"Reading Sci-Fi Novels"</reg><br />
+          <reg>"Hummus"</reg><br />
+        </p>
+        <h2>]</h2>
+      </div>
+      <div class="type">
+        <h2>Extracurriculars: [</h2>
+        <p class="tab">
+          <reg>"Mandarin School"</reg><br />
+          <reg>"Fine Art Classes"</reg><br />
+          <reg>"Operation Smile Co-Head"</reg><br />
+          <reg>"Yearbook Club Executive Member"</reg><br />
+          <reg>"FRC Member"</reg><br />
+          <reg>"Ottawa School of Art Childrens Technician"</reg><br />
+          <reg>"School Band"</reg><br />
+        </p>
+        <h2>]</h2>
+      </div>
+    </div>
+
+
+
+
+
+.type {
+  margin: 20px;
+  padding: 0 30px;
+  height: 350px;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #868ff6, 0 0 20px #868ff6, 1px 1px 3px white;
+}

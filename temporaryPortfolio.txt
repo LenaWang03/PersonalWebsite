@@ -1,0 +1,114 @@
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/Final.jpg" alt="Final" /></div>
+            <div class="text"><h1>01</h1></div>
+            <div class="title">
+              <a href="roseTinted.html">Rose-Tinted Glasses</a>
+            </div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/House.jpg" alt="House" /></div>
+            <div class="text"><h1>02</h1></div>
+            <div class="title"><a href="paint.html">Up House</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/Mary Poppins JPEG(resized).jpg" alt="Mary" />
+            </div>
+            <div class="text"><h1>03</h1></div>
+            <div class="title"><a href="paint.html">School Play Poster</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/Andy.JPG" alt="Andy" /></div>
+            <div class="text"><h1>04</h1></div>
+            <div class="title"><a href="paint.html">Andy</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/Underwater.jpg" alt="Underwater" />
+            </div>
+            <div class="text"><h1>05</h1></div>
+            <div class="title"><a href="paint.html">Tip of The Iceberg</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/spillSquare.jpg" alt="Spill" />
+            </div>
+            <div class="text"><h1>06</h1></div>
+            <div class="title"><a href="paint.html">Spill</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/Product.png" alt="Product" />
+            </div>
+            <div class="text"><h1>07</h1></div>
+            <div class="title"><a href="paint.html">Express Yourself</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/connie.jpg" alt="Connie" />
+            </div>
+            <div class="text"><h1>08</h1></div>
+            <div class="title"><a href="paint.html">Connie</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/Happy.jpg" alt="Happy" /></div>
+            <div class="text"><h1>09</h1></div>
+            <div class="title"><a href="paint.html">Happy</a></div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/among.png" alt="Among" /></div>
+            <div class="text"><h1>10</h1></div>
+            <div class="title">
+              <a href="paint.html">Surprise Box Product Design</a>
+            </div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image">
+              <img src="images/Midterm.JPG" alt="Midterm" />
+            </div>
+            <div class="text"><h1>11</h1></div>
+            <div class="title">
+              <a href="paint.html">Greetings From The Dead</a>
+            </div>
+          </div>
+          <div class="piece">
+            <div class="BG">
+              <img src="images/portfolioBG.png" alt="portfolioBG" />
+            </div>
+            <div class="image"><img src="images/robo.jpg" alt="Robot" /></div>
+            <div class="text"><h1>12</h1></div>
+            <div class="title"><a href="paint.html">Robotics Branding</a></div>
+          </div>
