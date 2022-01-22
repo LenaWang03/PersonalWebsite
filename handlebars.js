@@ -109,7 +109,7 @@ function fill_templateProj() {
     var dataProj2 = {
         listProj: [
             {piece: {
-                image: "c.jpg",
+                image: "c.JPG",
                 link: "connie",
                 title: "Connie"}
             },
@@ -240,7 +240,7 @@ function fill_templateProj() {
                 title: "Tip Of The Iceberg"}
             },
             {piece: {
-                image: "Reaching For Contact.jpg",
+                image: "rfc.jpg",
                 link: "reach",
                 title: "Reaching For Contact"}
             },
@@ -250,7 +250,7 @@ function fill_templateProj() {
     var dataWork4 = {
         listWork: [
             {piece: {
-                image: "eye.jpg",
+                image: "Eye.jpg",
                 link: "eye",
                 title: "Window To The Soul"}
             },
@@ -288,7 +288,7 @@ function fill_templateProj() {
     var data = {
         list: [
             {piece: {
-                image: "eye.jpg",
+                image: "Eye.jpg",
                 link: "eye",
                 title: "Window To The Soul"}
             },
@@ -312,7 +312,7 @@ function fill_templateProj() {
                 title: "Spill"}
             },
             {piece: {
-                image: "product.png",
+                image: "Product.png",
                 link: "product",
                 title: "Express Yourself"}
             },
@@ -326,12 +326,12 @@ function fill_templateProj() {
     var data3 = {
         list: [
             {piece: {
-                image: "Reaching For Contact.jpg",
+                image: "rfc.jpg",
                 link: "reach",
                 title: "Reaching For Contact"}
             },
             {piece: {
-                image: "c.jpg",
+                image: "c.JPG",
                 link: "connie",
                 title: "Connie"}
             },
@@ -392,7 +392,7 @@ function fill_templateProj() {
     var data3 = {
         list: [
             {piece: {
-                image: "Midterm.jpg",
+                image: "Midterm.JPG",
                 link: "greetings",
                 title: "Greetings From The Dead"}
             },
@@ -443,7 +443,7 @@ function fill_templateProj() {
     var data2 = {
         list: [
             {piece: {
-                image: "space.jpg",
+                image: "Space.jpg",
                 link: "space",
                 title: "Head In The Stars"}
             },
