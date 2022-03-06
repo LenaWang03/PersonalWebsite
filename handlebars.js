@@ -103,6 +103,16 @@ function fill_templateProj() {
                 link: "among",
                 title: "Surprise Box Product Design"}
             },
+            {piece: {
+                image: "mediready.jpg",
+                link: "logos",
+                title: "Commisioned Logos"}
+            },
+            {piece: {
+                image: "Tofu.jpg",
+                link: "tofu",
+                title: "Tofu App Design"}
+            },
 
         ]
     };
@@ -118,6 +128,17 @@ function fill_templateProj() {
                 link: "product",
                 title: "Express Yourself"}
             },
+            {piece: {
+                image: "Social Strike Logo 1.jpg",
+                link: "strike",
+                title: "Social Strike Branding"}
+            },
+            {piece: {
+                image: "larcheSmall.jpg",
+                link: "larche",
+                title: "L'Arche Branding"}
+            },
+            
         ]
     };
     var dataProj3 = {
@@ -126,7 +147,22 @@ function fill_templateProj() {
                 image: "robo.jpg",
                 link: "robotics",
                 title: "Robotics Branding"}
-                },
+            },
+            {piece: {
+                image: "compost.jpg",
+                link: "compost",
+                title: "Big Apple Compost"}
+            },
+            {piece: {
+                image: "DetectiveIdleAnimation.gif",
+                link: "game",
+                title: "UBC Game Development Club"}
+            },
+            {piece: {
+                image: "shirt front .jpg",
+                link: "woke",
+                title: "Stay Woke Branding"}
+            },
         ]
     };
     var dataProj4 = {
@@ -140,6 +176,16 @@ function fill_templateProj() {
                 image: "Midterm.JPG",
                 link: "greetings",
                 title: "Greetings From The Dead"}
+            },
+            {piece: {
+                image: "NU logo Final.jpg",
+                link: "campaign",
+                title: "Mock Election Campaign"}
+            },
+            {piece: {
+                image: "flatDesign_lenaWang.jpg",
+                link: "infographics",
+                title: "School Infographics"}
             },
         ]
     };
@@ -175,7 +221,7 @@ function fill_templateProj() {
                 title: "Last One Standing"}
             },
             {piece: {
-                image: "space.jpg",
+                image: "Space.jpg",
                 link: "space",
                 title: "Head In The Stars"}
             },
@@ -185,6 +231,11 @@ function fill_templateProj() {
                 link: "kiki",
                 title: "Kiki's Delivery Service"}
             },
+            {piece: {
+                image: "Yearbook2020.png",
+                link: "yearbook2020",
+                title: "Yearbook 2020 Cover"}
+            },
             
         ]
     };
@@ -193,7 +244,7 @@ function fill_templateProj() {
             {piece: {
                 image: "Yearbook.png",
                 link: "yearbook",
-                title: "2021 Yearbook Cover Winner"}
+                title: "Yearbook 2021"}
             },
             {piece: {
                 image: "Soldier.jpg",
@@ -215,6 +266,7 @@ function fill_templateProj() {
                 link: "lord",
                 title: "Lord Of The Flies Book Cover"}
             },
+            
         ]
     };
     var dataWork3 = {
@@ -245,6 +297,7 @@ function fill_templateProj() {
                 title: "Reaching For Contact"}
             },
             
+            
         ]
     };
     var dataWork4 = {
@@ -270,6 +323,18 @@ function fill_templateProj() {
                 link: "dandy",
                 title: "Weeds Are Flowers Too"}
             },
+            {piece: {
+                image: "Yearbook.png",
+                link: "yearbook",
+                title: "Yearbook 2021"}
+            },
+            {piece: {
+                image: "wallpaper.jpg",
+                link: "wallpaper",
+                title: "iPhone X Wallpaper"}
+            },
+            
+            
         ]
     };
    
@@ -447,12 +512,6 @@ function fill_templateProj() {
                 link: "space",
                 title: "Head In The Stars"}
             },
-            {piece: {
-                image: "Yearbook.png",
-                link: "yearbook",
-                title: "2021 Yearbook Cover Winner"}
-            },
-            
         ]
     };
     var data3 = {
@@ -491,13 +550,23 @@ function fill_templateProj() {
             {piece: {
                 image: "ludis.png",
                 link: "ludis",
-                title: "Ludis"}
+                title: "Ludis Branding"}
             },
             {piece: {
                 image: "Mary Poppins JPEG(resized).jpg",
                 link: "mary",
                 title: "Mary Poppins Poster"}
             },
+            {piece: {
+                image: "compost.jpg",
+                link: "compost",
+                title: "Big Apple Compost"}
+            },
+            {piece: {
+                image: "wallpaper.jpg",
+                link: "wallpaper",
+                title: "iPhone X Wallpaper"}
+            },    
         ]
     };
     var data2 = {
@@ -507,23 +576,74 @@ function fill_templateProj() {
                 link: "robotics",
                 title: "Robotics Branding"}
             },
+            {piece: {
+                image: "mediready.jpg",
+                link: "logos",
+                title: "Commisioned Logos"}
+            },
+            {piece: {
+                image: "Tofu.jpg",
+                link: "tofu",
+                title: "Tofu App Design"}
+            },
+            {piece: {
+                image: "flatDesign_lenaWang.jpg",
+                link: "infographics",
+                title: "School Infographics"}
+            },
         ]
     };
     var data3 = {
         list: [
             {piece: {
+                image: "among.png",
+                link: "among",
+                title: "Surprise Box Product Design"}
+            },
+            {piece: {
                 image: "Product.png",
                 link: "product",
                 title: "Express Yourself"}
             },
+            {piece: {
+                image: "Yearbook.png",
+                link: "yearbook",
+                title: "Yearbook 2021"}
+            },
+            {piece: {
+                image: "DetectiveIdleAnimation.gif",
+                link: "game",
+                title: "UBC Game Development Club"}
+            },
+            
         ]
     };
     var data4 = {
         list: [
             {piece: {
-                image: "among.png",
-                link: "among",
-                title: "Surprise Box Product Design"}
+                image: "NU logo Final.jpg",
+                link: "campaign",
+                title: "Mock Election Campaign"}
+            },
+            {piece: {
+                image: "Social Strike Logo 1.jpg",
+                link: "strike",
+                title: "Social Strike Branding"}
+            },
+            {piece: {
+                image: "larcheSmall.jpg",
+                link: "larche",
+                title: "L'Arche Branding"}
+            },
+            {piece: {
+                image: "shirt front .jpg",
+                link: "woke",
+                title: "Stay Woke Branding"}
+            },
+            {piece: {
+                image: "Yearbook2020.png",
+                link: "yearbook2020",
+                title: "Yearbook 2020 Cover"}
             },
         ]
     };
@@ -539,7 +659,7 @@ function fill_templateProj() {
      document.querySelector("#output4").innerHTML = filled4;
    }
 
-   function fill_templateMisc() {
+   function fill_templatePhoto() {
     var data = {
         list: [
            
