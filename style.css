@@ -501,6 +501,13 @@ footer a:hover {
   width: 40%;
 }
 
+.disclaimer {
+  text-align: center;
+  box-shadow: 0 0 10px #868ff6;
+  border-radius: 20px;
+  padding: 50px;
+}
+
 .title {
   margin: 30px;
   display: absolute;
