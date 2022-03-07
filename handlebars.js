@@ -662,22 +662,48 @@ function fill_templateProj() {
    function fill_templatePhoto() {
     var data = {
         list: [
-           
+            {piece: {
+                image: "eva.jpg",
+                link: "friends",
+                title: "Friends"}
+            },
+            {piece: {
+                image: "bench.jpg",
+                link: "downtown",
+                title: "Downtown"}
+            },
         ]
     };
     var data2 = {
         list: [
-           
+            {piece: {
+                image: "flower.jpg",
+                link: "skills2019",
+                title: "Skills Canada 2019"}
+            },
+            {piece: {
+                image: "sari glasses.jpg",
+                link: "michaels",
+                title: "Michaels"}
+            },
         ]
     };
     var data3 = {
         list: [
-           
+            {piece: {
+                image: "glasses.jpg",
+                link: "weekends",
+                title: "Weekends of 2020"}
+            },
         ]
     };
     var data4 = {
         list: [
-           
+            {piece: {
+                image: "beam.jpg",
+                link: "skills2020",
+                title: "Skills Canada 2020"}
+            },
         ]
     };
    
