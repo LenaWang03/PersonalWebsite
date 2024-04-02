@@ -170,31 +170,19 @@ for (let shader of Object.values(shaders)) {
   const textureLoader = new THREE.TextureLoader();
 
   // Load the star image
-  const starTexture = textureLoader.load("gltf/test.jpg", () => {
+  const starTexture = textureLoader.load("gltf/lawsuit.png", () => {
     // This function is optional and runs after the image is loaded
     console.log("Star image loaded");
   });
 
-  // Define the size of the plane
-  const planeWidth = 10; // Width of the plane
-  const planeHeight = 10; // Height of the plane
-
   // Create a plane geometry
-  const planeGeometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
-
-  // Create a material using the star texture
+  const planeGeometry = new THREE.PlaneGeometry(10, 10);
   const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
-
-  // Create a mesh using the geometry and material
   const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
-
   planeMesh.rotation.y = 0.9;
-
-  // Position the plane in the scene
-  planeMesh.position.set(0, 0, -5); // Adjust the position as needed
-
-  // Add the plane to your scene
+  planeMesh.position.set(-20, 10, -20); // Adjust the position as needed
   scene.add(planeMesh);
+  
 
   canvas.addEventListener("mousedown", onCanvasMouseDown);
   function onCanvasMouseDown(event) {
@@ -211,6 +199,8 @@ for (let shader of Object.values(shaders)) {
     // If the armadillo is clicked, log "hello" to the console
     if (raycaster.intersectObject(planeMesh, true).length > 0) {
       console.log("hello");
+      window.open('https://www.ea.com/en-ca/news/our-continued-efforts-to-champion-women-in-sports-and-gaming', '_blank');
+
     }
   }
   var floorTexture;
@@ -247,9 +237,6 @@ for (let shader of Object.values(shaders)) {
     armadillo.rotation.y = Math.PI;
     armadillo.scale.set(10, 10, 10);
     armadillo.parent = worldFrame;
-    armadillo.addEventListener("click", () => {
-      console.log("hello");
-    });
     scene.add(armadillo);
   });
 
