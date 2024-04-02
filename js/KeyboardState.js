@@ -34,6 +34,7 @@ var THREEx	= THREEx 		|| {};
  *   - in this._onkeyChange, generate a string from the DOM event
  *   - use this as event name
 */
+
 THREEx.KeyboardState	= function(domElement)
 {
 	this.domElement= domElement	|| document;
@@ -160,3 +161,5 @@ THREEx.KeyboardState.prototype.eventMatches = function(event, keyDesc) {
 	}
 	return true;
 }
+
+export {THREEx};

@@ -1,22 +1,21 @@
 /**
- * @author jaliborc / http://jaliborc.com/
+ * @author jaliborc / http://jaliborc.com/ with a modification for CPSC314 use
  */
+import * as THREE from './three.module.js';
 
- THREE.SourceLoader = function(manager) {
-	this.manager = (manager !== undefined) ? manager : THREE.DefaultLoadingManager;
-};
+class SourceLoader {
+	constructor(manager) {
+		this.manager = (manager !== undefined) ? manager : THREE.DefaultLoadingManager;
+	};
 
-THREE.SourceLoader.prototype = {
-	constructor: THREE.SourceLoader,
-
-	load: function(urls, onLoad) {
+	load(urls, onLoad) {
 		this.urls = urls
 		this.results = {}
 		this.loadFile(0)
 		this.onLoad = onLoad
-	},
+	}
 
-	loadFile: function(i) {
+	loadFile(i) {
 		if (i == this.urls.length)
     		return this.onLoad(this.results)
 
@@ -29,3 +28,5 @@ THREE.SourceLoader.prototype = {
 	  	})
 	}
 }
+
+export {SourceLoader};
