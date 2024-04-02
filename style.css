@@ -405,7 +405,7 @@ bold {
   text-align: center;
   flex-direction: column;
   padding: 0px 50px;
-  padding-top: 75px;
+  padding-top: 10px;
   border-radius: 20px;
   height: 250px;
   box-shadow: 0 0 20px #868ff6, 0 0 20px #868ff6, 1px 1px 3px white;
