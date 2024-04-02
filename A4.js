@@ -108,10 +108,10 @@ const IBLControls = new THREE.OrbitControls(IBLCamera, canvas);
 IBLControls.minDistance = 1;
 IBLControls.maxDistance = 300;
 
-const IBLGUI = new dat.GUI();
-IBLGUI.add( IBLParams, 'hdrToneMapping', Object.keys(hdrToneMappingOptions));
-IBLGUI.add( IBLParams, 'exposure', 0, 2, 0.01 );
-IBLGUI.open();
+// const IBLGUI = new dat.GUI();
+// IBLGUI.add( IBLParams, 'hdrToneMapping', Object.keys(hdrToneMappingOptions));
+// IBLGUI.add( IBLParams, 'exposure', 0, 2, 0.01 );
+// IBLGUI.open();
 
 // Q1d Replace the light source with the shadow camera, i.e. setup a camera at the light source
 shadowCam.position.set(200.0, 200.0, 200.0);
