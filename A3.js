@@ -170,111 +170,111 @@ for (let shader of Object.values(shaders)) {
   const textureLoader = new THREE.TextureLoader();
 
   
+  if (shader.key === shaders.TOON.key) {
+    const womenT = textureLoader.load("gltf/women.png");
+    const womenG = new THREE.PlaneGeometry(20, 15);
+    const womenM = new THREE.MeshBasicMaterial({ map: womenT });
+    const women = new THREE.Mesh(womenG, womenM);
+    women.rotation.y = 3.0;
+    women.position.set(-15, 2, 30);
+    scene.add(women);
 
-  const womenT = textureLoader.load("gltf/women.png");
-  const womenG = new THREE.PlaneGeometry(20, 15);
-  const womenM = new THREE.MeshBasicMaterial({ map: womenT });
-  const women = new THREE.Mesh(womenG, womenM);
-  women.rotation.y = 3.0;
-  women.position.set(-15, 2, 30);
-  scene.add(women);
+    const igT = textureLoader.load("gltf/ig.png");
+    const igG = new THREE.PlaneGeometry(5, 5);
+    const igM = new THREE.MeshBasicMaterial({ map: igT });
+    const ig = new THREE.Mesh(igG, igM);
+    ig.rotation.y = 2.17;
+    ig.position.set(-30, 0, 20); 
+    scene.add(ig);
 
-  const igT = textureLoader.load("gltf/ig.png");
-  const igG = new THREE.PlaneGeometry(5, 5);
-  const igM = new THREE.MeshBasicMaterial({ map: igT });
-  const ig = new THREE.Mesh(igG, igM);
-  ig.rotation.y = 2.17;
-  ig.position.set(-30, 0, 20); 
-  scene.add(ig);
+    const motionT = textureLoader.load("gltf/motion.png");
+    const motionG = new THREE.PlaneGeometry(10, 10);
+    const motionM = new THREE.MeshBasicMaterial({ map: motionT });
+    const motion = new THREE.Mesh(motionG, motionM);
+    motion.rotation.y = 1.77;
+    motion.position.set(-40, 15, 13); 
+    scene.add(motion);
 
-  const motionT = textureLoader.load("gltf/motion.png");
-  const motionG = new THREE.PlaneGeometry(10, 10);
-  const motionM = new THREE.MeshBasicMaterial({ map: motionT });
-  const motion = new THREE.Mesh(motionG, motionM);
-  motion.rotation.y = 1.77;
-  motion.position.set(-40, 15, 13); 
-  scene.add(motion);
+    const eaT = textureLoader.load("gltf/ea.png");
+    const eaG = new THREE.PlaneGeometry(20, 10);
+    const eaM = new THREE.MeshBasicMaterial({ map: eaT });
+    const ea = new THREE.Mesh(eaG, eaM);
+    ea.rotation.y = 1.40;
+    ea.position.set(-30, 0, -5); 
+    scene.add(ea);
 
-  const eaT = textureLoader.load("gltf/ea.png");
-  const eaG = new THREE.PlaneGeometry(20, 10);
-  const eaM = new THREE.MeshBasicMaterial({ map: eaT });
-  const ea = new THREE.Mesh(eaG, eaM);
-  ea.rotation.y = 1.40;
-  ea.position.set(-30, 0, -5); 
-  scene.add(ea);
+    const starTexture = textureLoader.load("gltf/lawsuit.png");
+    const planeGeometry = new THREE.PlaneGeometry(10, 10);
+    const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
+    const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+    planeMesh.rotation.y = 0.9;
+    planeMesh.position.set(-20, 10, -20);
+    scene.add(planeMesh);
 
-  const starTexture = textureLoader.load("gltf/lawsuit.png");
-  const planeGeometry = new THREE.PlaneGeometry(10, 10);
-  const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
-  const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
-  planeMesh.rotation.y = 0.9;
-  planeMesh.position.set(-20, 10, -20);
-  scene.add(planeMesh);
+    const twitterT = textureLoader.load("gltf/twitter.png");
+    const twitterG = new THREE.PlaneGeometry(10, 7);
+    const twitterM = new THREE.MeshBasicMaterial({ map: twitterT });
+    const twitter = new THREE.Mesh(twitterG, twitterM);
+    twitter.rotation.y = 0.20;
+    twitter.position.set(-10, -5, -30); 
+    scene.add(twitter);
 
-  const twitterT = textureLoader.load("gltf/twitter.png");
-  const twitterG = new THREE.PlaneGeometry(10, 7);
-  const twitterM = new THREE.MeshBasicMaterial({ map: twitterT });
-  const twitter = new THREE.Mesh(twitterG, twitterM);
-  twitter.rotation.y = 0.20;
-  twitter.position.set(-10, -5, -30); 
-  scene.add(twitter);
+    const mobileT = textureLoader.load("gltf/mobile.png");
+    const mobileG = new THREE.PlaneGeometry(15, 13);
+    const mobileM = new THREE.MeshBasicMaterial({ map: mobileT });
+    const mobile = new THREE.Mesh(mobileG, mobileM);
+    mobile.rotation.y = 0.0;
+    mobile.position.set(0, 5, -40); 
+    scene.add(mobile);
 
-  const mobileT = textureLoader.load("gltf/mobile.png");
-  const mobileG = new THREE.PlaneGeometry(15, 13);
-  const mobileM = new THREE.MeshBasicMaterial({ map: mobileT });
-  const mobile = new THREE.Mesh(mobileG, mobileM);
-  mobile.rotation.y = 0.0;
-  mobile.position.set(0, 5, -40); 
-  scene.add(mobile);
+    const fifaT = textureLoader.load("gltf/fifa.png");
+    const fifaG = new THREE.PlaneGeometry(20, 4);
+    const fifaM = new THREE.MeshBasicMaterial({ map: fifaT });
+    const fifa = new THREE.Mesh(fifaG, fifaM);
+    fifa.rotation.y = -0.2;
+    fifa.position.set(10, -3, -20); 
+    scene.add(fifa);
 
-  const fifaT = textureLoader.load("gltf/fifa.png");
-  const fifaG = new THREE.PlaneGeometry(20, 4);
-  const fifaM = new THREE.MeshBasicMaterial({ map: fifaT });
-  const fifa = new THREE.Mesh(fifaG, fifaM);
-  fifa.rotation.y = -0.2;
-  fifa.position.set(10, -3, -20); 
-  scene.add(fifa);
+    const linkedinT = textureLoader.load("gltf/linkedin.png");
+    const linkedinG = new THREE.PlaneGeometry(3, 3);
+    const linkedinM = new THREE.MeshBasicMaterial({ map: linkedinT });
+    const linkedin = new THREE.Mesh(linkedinG, linkedinM);
+    linkedin.rotation.y = -0.4;
+    linkedin.position.set(20, 10, -30); 
+    scene.add(linkedin);
 
-  const linkedinT = textureLoader.load("gltf/linkedin.png");
-  const linkedinG = new THREE.PlaneGeometry(3, 3);
-  const linkedinM = new THREE.MeshBasicMaterial({ map: linkedinT });
-  const linkedin = new THREE.Mesh(linkedinG, linkedinM);
-  linkedin.rotation.y = -0.4;
-  linkedin.position.set(20, 10, -30); 
-  scene.add(linkedin);
+    const wikiT = textureLoader.load("gltf/wiki.png");
+    const wikiG = new THREE.PlaneGeometry(17, 17);
+    const wikiM = new THREE.MeshBasicMaterial({ map: wikiT });
+    const wiki = new THREE.Mesh(wikiG, wikiM);
+    wiki.rotation.y = -1.2;
+    wiki.position.set(30, 5, -10); 
+    scene.add(wiki);
 
-  const wikiT = textureLoader.load("gltf/wiki.png");
-  const wikiG = new THREE.PlaneGeometry(17, 17);
-  const wikiM = new THREE.MeshBasicMaterial({ map: wikiT });
-  const wiki = new THREE.Mesh(wikiG, wikiM);
-  wiki.rotation.y = -1.2;
-  wiki.position.set(30, 5, -10); 
-  scene.add(wiki);
+    const internT = textureLoader.load("gltf/intern.png");
+    const internG = new THREE.PlaneGeometry(10, 10);
+    const internM = new THREE.MeshBasicMaterial({ map: internT });
+    const intern = new THREE.Mesh(internG, internM);
+    intern.rotation.y = -1.8;
+    intern.position.set(40, -5, 10); 
+    scene.add(intern);
 
-  const internT = textureLoader.load("gltf/intern.png");
-  const internG = new THREE.PlaneGeometry(10, 10);
-  const internM = new THREE.MeshBasicMaterial({ map: internT });
-  const intern = new THREE.Mesh(internG, internM);
-  intern.rotation.y = -1.8;
-  intern.position.set(40, -5, 10); 
-  scene.add(intern);
+    const layoffT = textureLoader.load("gltf/layoff.png");
+    const layoffG = new THREE.PlaneGeometry(20, 10);
+    const layoffM = new THREE.MeshBasicMaterial({ map: layoffT });
+    const layoff = new THREE.Mesh(layoffG, layoffM);
+    layoff.rotation.y = -2.3;
+    layoff.position.set(20, 10, 20);
+    scene.add(layoff);
 
-  const layoffT = textureLoader.load("gltf/layoff.png");
-  const layoffG = new THREE.PlaneGeometry(20, 10);
-  const layoffM = new THREE.MeshBasicMaterial({ map: layoffT });
-  const layoff = new THREE.Mesh(layoffG, layoffM);
-  layoff.rotation.y = -2.3;
-  layoff.position.set(20, 10, 20);
-  scene.add(layoff);
-
-  const starwarsT = textureLoader.load("gltf/starwars.png");
-  const starwarsG = new THREE.PlaneGeometry(10, 10);
-  const starwarsM = new THREE.MeshBasicMaterial({ map: starwarsT });
-  const starwars = new THREE.Mesh(starwarsG, starwarsM);
-  starwars.rotation.y = -3.0;
-  starwars.position.set(15, 2, 40);
-  scene.add(starwars);
-  
+    const starwarsT = textureLoader.load("gltf/starwars.png");
+    const starwarsG = new THREE.PlaneGeometry(10, 10);
+    const starwarsM = new THREE.MeshBasicMaterial({ map: starwarsT });
+    const starwars = new THREE.Mesh(starwarsG, starwarsM);
+    starwars.rotation.y = -3.0;
+    starwars.position.set(15, 2, 40);
+    scene.add(starwars);
+  }
 
   canvas.addEventListener("mousedown", onCanvasMouseDown);
   function onCanvasMouseDown(event) {
@@ -288,7 +288,7 @@ for (let shader of Object.values(shaders)) {
     const raycaster = new THREE.Raycaster();
     raycaster.setFromCamera(mouse, scenes[0].camera); // Use the camera from the first scene
 
-    // If the armadillo is clicked, log "hello" to the console
+    
     if (raycaster.intersectObject(planeMesh, true).length > 0) {
       console.log("hello");
       window.open('https://bc.ctvnews.ca/video-game-maker-faces-lawsuit-over-alleged-in-game-gambling-1.5225920?cache=rbyihszjzxf', '_blank');
