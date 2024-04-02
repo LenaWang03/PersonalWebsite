@@ -170,18 +170,45 @@ for (let shader of Object.values(shaders)) {
   const textureLoader = new THREE.TextureLoader();
 
   // Load the star image
-  const starTexture = textureLoader.load("gltf/lawsuit.png", () => {
-    // This function is optional and runs after the image is loaded
-    console.log("Star image loaded");
-  });
-
-  // Create a plane geometry
+  const starTexture = textureLoader.load("gltf/lawsuit.png");
   const planeGeometry = new THREE.PlaneGeometry(10, 10);
   const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
   const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
   planeMesh.rotation.y = 0.9;
-  planeMesh.position.set(-20, 10, -20); // Adjust the position as needed
+  planeMesh.position.set(-20, 10, -20);
   scene.add(planeMesh);
+
+  const womenT = textureLoader.load("gltf/women.png");
+  const womenG = new THREE.PlaneGeometry(10, 10);
+  const womenM = new THREE.MeshBasicMaterial({ map: womenT });
+  const women = new THREE.Mesh(womenG, womenM);
+  women.rotation.y = 3.0;
+  women.position.set(-15, 2, 30);
+  scene.add(women);
+
+  const fifaT = textureLoader.load("gltf/fifa.png");
+  const fifaG = new THREE.PlaneGeometry(10, 2);
+  const fifaM = new THREE.MeshBasicMaterial({ map: fifaT });
+  const fifa = new THREE.Mesh(fifaG, fifaM);
+  fifa.rotation.y = 2.17;
+  fifa.position.set(-30, 0, 20); 
+  scene.add(fifa);
+
+  const motionT = textureLoader.load("gltf/motion.png");
+  const motionG = new THREE.PlaneGeometry(10, 10);
+  const motionM = new THREE.MeshBasicMaterial({ map: motionT });
+  const motion = new THREE.Mesh(motionG, motionM);
+  motion.rotation.y = 1.77;
+  motion.position.set(-40, 15, 13); 
+  scene.add(motion);
+
+  const eaT = textureLoader.load("gltf/ea.png");
+  const eaG = new THREE.PlaneGeometry(20, 10);
+  const eaM = new THREE.MeshBasicMaterial({ map: eaT });
+  const ea = new THREE.Mesh(eaG, eaM);
+  ea.rotation.y = 1.40;
+  ea.position.set(-30, 0, -5); 
+  scene.add(ea);
   
 
   canvas.addEventListener("mousedown", onCanvasMouseDown);
@@ -232,13 +259,13 @@ for (let shader of Object.values(shaders)) {
   scene.add(sphereLight);
 
   // If there's no helmet, then only place the armadillo. i.e. key 1, 2, 3
-  loadAndPlaceOBJ("obj/armadillo.obj", shader.material, function (armadillo) {
-    armadillo.position.set(0.0, -2.3, -10.0);
-    armadillo.rotation.y = Math.PI;
-    armadillo.scale.set(10, 10, 10);
-    armadillo.parent = worldFrame;
-    scene.add(armadillo);
-  });
+  // loadAndPlaceOBJ("obj/armadillo.obj", shader.material, function (armadillo) {
+  //   armadillo.position.set(0.0, -2.3, -10.0);
+  //   armadillo.rotation.y = Math.PI;
+  //   armadillo.scale.set(10, 10, 10);
+  //   armadillo.parent = worldFrame;
+  //   scene.add(armadillo);
+  // });
 
   scenes.push({ scene, camera });
 }
