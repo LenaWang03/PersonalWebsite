@@ -169,30 +169,23 @@ for (let shader of Object.values(shaders)) {
   // Create a texture loader
   const textureLoader = new THREE.TextureLoader();
 
-  // Load the star image
-  const starTexture = textureLoader.load("gltf/lawsuit.png");
-  const planeGeometry = new THREE.PlaneGeometry(10, 10);
-  const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
-  const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
-  planeMesh.rotation.y = 0.9;
-  planeMesh.position.set(-20, 10, -20);
-  scene.add(planeMesh);
+  
 
   const womenT = textureLoader.load("gltf/women.png");
-  const womenG = new THREE.PlaneGeometry(10, 10);
+  const womenG = new THREE.PlaneGeometry(20, 15);
   const womenM = new THREE.MeshBasicMaterial({ map: womenT });
   const women = new THREE.Mesh(womenG, womenM);
   women.rotation.y = 3.0;
   women.position.set(-15, 2, 30);
   scene.add(women);
 
-  const fifaT = textureLoader.load("gltf/fifa.png");
-  const fifaG = new THREE.PlaneGeometry(10, 2);
-  const fifaM = new THREE.MeshBasicMaterial({ map: fifaT });
-  const fifa = new THREE.Mesh(fifaG, fifaM);
-  fifa.rotation.y = 2.17;
-  fifa.position.set(-30, 0, 20); 
-  scene.add(fifa);
+  const igT = textureLoader.load("gltf/ig.png");
+  const igG = new THREE.PlaneGeometry(5, 5);
+  const igM = new THREE.MeshBasicMaterial({ map: igT });
+  const ig = new THREE.Mesh(igG, igM);
+  ig.rotation.y = 2.17;
+  ig.position.set(-30, 0, 20); 
+  scene.add(ig);
 
   const motionT = textureLoader.load("gltf/motion.png");
   const motionG = new THREE.PlaneGeometry(10, 10);
@@ -209,6 +202,78 @@ for (let shader of Object.values(shaders)) {
   ea.rotation.y = 1.40;
   ea.position.set(-30, 0, -5); 
   scene.add(ea);
+
+  const starTexture = textureLoader.load("gltf/lawsuit.png");
+  const planeGeometry = new THREE.PlaneGeometry(10, 10);
+  const planeMaterial = new THREE.MeshBasicMaterial({ map: starTexture });
+  const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+  planeMesh.rotation.y = 0.9;
+  planeMesh.position.set(-20, 10, -20);
+  scene.add(planeMesh);
+
+  const twitterT = textureLoader.load("gltf/twitter.png");
+  const twitterG = new THREE.PlaneGeometry(10, 7);
+  const twitterM = new THREE.MeshBasicMaterial({ map: twitterT });
+  const twitter = new THREE.Mesh(twitterG, twitterM);
+  twitter.rotation.y = 0.20;
+  twitter.position.set(-10, -5, -30); 
+  scene.add(twitter);
+
+  const mobileT = textureLoader.load("gltf/mobile.png");
+  const mobileG = new THREE.PlaneGeometry(15, 13);
+  const mobileM = new THREE.MeshBasicMaterial({ map: mobileT });
+  const mobile = new THREE.Mesh(mobileG, mobileM);
+  mobile.rotation.y = 0.0;
+  mobile.position.set(0, 5, -40); 
+  scene.add(mobile);
+
+  const fifaT = textureLoader.load("gltf/fifa.png");
+  const fifaG = new THREE.PlaneGeometry(20, 4);
+  const fifaM = new THREE.MeshBasicMaterial({ map: fifaT });
+  const fifa = new THREE.Mesh(fifaG, fifaM);
+  fifa.rotation.y = -0.2;
+  fifa.position.set(10, -3, -20); 
+  scene.add(fifa);
+
+  const linkedinT = textureLoader.load("gltf/linkedin.png");
+  const linkedinG = new THREE.PlaneGeometry(3, 3);
+  const linkedinM = new THREE.MeshBasicMaterial({ map: linkedinT });
+  const linkedin = new THREE.Mesh(linkedinG, linkedinM);
+  linkedin.rotation.y = -0.4;
+  linkedin.position.set(20, 10, -30); 
+  scene.add(linkedin);
+
+  const wikiT = textureLoader.load("gltf/wiki.png");
+  const wikiG = new THREE.PlaneGeometry(17, 17);
+  const wikiM = new THREE.MeshBasicMaterial({ map: wikiT });
+  const wiki = new THREE.Mesh(wikiG, wikiM);
+  wiki.rotation.y = -1.2;
+  wiki.position.set(30, 5, -10); 
+  scene.add(wiki);
+
+  const internT = textureLoader.load("gltf/intern.png");
+  const internG = new THREE.PlaneGeometry(10, 10);
+  const internM = new THREE.MeshBasicMaterial({ map: internT });
+  const intern = new THREE.Mesh(internG, internM);
+  intern.rotation.y = -1.8;
+  intern.position.set(40, -5, 10); 
+  scene.add(intern);
+
+  const layoffT = textureLoader.load("gltf/layoff.png");
+  const layoffG = new THREE.PlaneGeometry(20, 10);
+  const layoffM = new THREE.MeshBasicMaterial({ map: layoffT });
+  const layoff = new THREE.Mesh(layoffG, layoffM);
+  layoff.rotation.y = -2.3;
+  layoff.position.set(20, 10, 20);
+  scene.add(layoff);
+
+  const starwarsT = textureLoader.load("gltf/starwars.png");
+  const starwarsG = new THREE.PlaneGeometry(10, 10);
+  const starwarsM = new THREE.MeshBasicMaterial({ map: starwarsT });
+  const starwars = new THREE.Mesh(starwarsG, starwarsM);
+  starwars.rotation.y = -3.0;
+  starwars.position.set(15, 2, 40);
+  scene.add(starwars);
   
 
   canvas.addEventListener("mousedown", onCanvasMouseDown);
@@ -226,9 +291,44 @@ for (let shader of Object.values(shaders)) {
     // If the armadillo is clicked, log "hello" to the console
     if (raycaster.intersectObject(planeMesh, true).length > 0) {
       console.log("hello");
+      window.open('https://bc.ctvnews.ca/video-game-maker-faces-lawsuit-over-alleged-in-game-gambling-1.5225920?cache=rbyihszjzxf', '_blank');
+    } else if (raycaster.intersectObject(women, true).length > 0) {
+      console.log("hello");
       window.open('https://www.ea.com/en-ca/news/our-continued-efforts-to-champion-women-in-sports-and-gaming', '_blank');
-
-    }
+    } else if (raycaster.intersectObject(ig, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.instagram.com/ea/', '_blank');
+    } else if (raycaster.intersectObject(motion, true).length > 0) {
+      console.log("hello");
+      window.open('https://blog.playstation.com/2022/07/27/the-realism-of-fifa-23s-new-motion-capture-technology/' , '_blank');
+    } else if (raycaster.intersectObject(ea, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.ea.com/', '_blank');
+    } else if (raycaster.intersectObject(twitter, true).length > 0) {
+      console.log("hello");
+      window.open('https://twitter.com/EA', '_blank');
+    } else if (raycaster.intersectObject(mobile, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.axios.com/2022/05/11/ea-activision-ubisoft-mobile-games', '_blank');
+    } else if (raycaster.intersectObject(fifa, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.wired.com/story/ea-sports-fc-24-fifa-24/', '_blank');
+    } else if (raycaster.intersectObject(linkedin, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.linkedin.com/company/electronic-arts/', '_blank');
+    } else if (raycaster.intersectObject(wiki, true).length > 0) {
+      console.log("hello");
+      window.open('https://en.wikipedia.org/wiki/Electronic_Arts', '_blank');
+    } else if (raycaster.intersectObject(intern, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.ea.com/news/ea-named-top-25-best-overall-internship', '_blank');
+    } else if (raycaster.intersectObject(layoff, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.cnn.com/2024/02/28/tech/electronic-arts-layoffs/index.html', '_blank');
+    } else if (raycaster.intersectObject(starwars, true).length > 0) {
+      console.log("hello");
+      window.open('https://www.businessinsider.com/reddit-world-record-downvotes-ea-star-wars-battlefront-2-2019-9#:~:text=Reddit%20users%20have%20discovered%20that,Star%20Wars%3A%20Battlefront%202.%22', '_blank');
+    } 
   }
   var floorTexture;
   if (shader.key === shaders.BLINNPHONG.key) {
@@ -259,13 +359,13 @@ for (let shader of Object.values(shaders)) {
   scene.add(sphereLight);
 
   // If there's no helmet, then only place the armadillo. i.e. key 1, 2, 3
-  // loadAndPlaceOBJ("obj/armadillo.obj", shader.material, function (armadillo) {
-  //   armadillo.position.set(0.0, -2.3, -10.0);
-  //   armadillo.rotation.y = Math.PI;
-  //   armadillo.scale.set(10, 10, 10);
-  //   armadillo.parent = worldFrame;
-  //   scene.add(armadillo);
-  // });
+  loadAndPlaceOBJ("obj/armadillo.obj", shader.material, function (armadillo) {
+    armadillo.position.set(0.0, -2.3, -10.0);
+    armadillo.rotation.y = Math.PI;
+    armadillo.scale.set(10, 10, 10);
+    armadillo.parent = worldFrame;
+    scene.add(armadillo);
+  });
 
   scenes.push({ scene, camera });
 }
